@@ -173,7 +173,7 @@ nav {
 .hero-text span { 
     text-decoration: underline;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     display: inline-block;
 }
 .hero-text h1 { 
@@ -364,5 +364,225 @@ nav {
         font-size: 15px;
     }
 }
-
 /* Experience End */
+
+/* UVP Start */
+.value { 
+    padding: 4% 5%;
+}
+.value-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.value-header { 
+    color: #fff;
+}
+.value-tagline { 
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background: #F5CD99;
+    background: linear-gradient(to right, #F5CD99 0%, #F56E0F 37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.value-heading {    
+    font-weight: 400;
+    font-size: 60px;
+    width: 60%;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.value-cards-wrapper { 
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.value-card { 
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    max-width: 370px;
+}
+.value-icon{ 
+    color: var(--primary-color);
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1em;
+    max-width: max-content;
+}
+.value-icon i { 
+    font-size: 30px;
+}
+.value-desc { 
+    color: var(--white);
+    margin-bottom: 5em;
+}
+.value-desc h3 { 
+    font-size: 23px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.value-desc p{ 
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.6;
+}
+.value-cta { 
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 50px;
+    color: var(--white);
+    border-radius: 15px;
+    background: rgb(255,195,152);
+background: linear-gradient(218deg, rgba(255,195,152,1) 0%, rgba(245,110,15,1) 44%);
+}
+.value-cta-container { 
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+.value-text h2{ 
+    font-size: 60px;
+    margin: 0;
+    font-weight: 600;
+}
+.value-text p { 
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.value-text a { 
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    transition: 0.2s ease-out;
+}
+.value-text a:hover { 
+    color: var(--secondary-color);
+    background-color: var(--white);
+}
+/* Media Queries */
+
+/* Untuk layar tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .value-heading {
+        font-size: 50px;
+        width: 80%;
+    }
+    
+    .value-cards-wrapper {
+        flex-direction: column;
+        align-items: centfleer;
+    }
+
+    .value-card {
+        max-width: 100%;
+    }
+
+
+    .value-desc {
+        margin-bottom: 3em;
+    }
+
+    .value-cta {
+        padding: 40px;
+    }
+
+    .value-text h2 {
+        font-size: 50px;
+    }
+}
+
+/* Untuk layar mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .value-container {
+        gap: 1.5em;
+    }
+
+    .value-heading {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .value-cards-wrapper {
+        gap: 2em;
+    }
+
+    .value-card {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    .value-desc h3 {
+        font-size: 20px;
+    }
+
+    .value-desc p {
+        font-size: 14px;
+    }
+
+    .value-cta {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .value-text h2 {
+        font-size: 40px;
+    }
+
+    .value-text p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .value-text a {
+        font-size: 16px;
+    }
+}
+
+/* Untuk layar sangat kecil (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .value {
+    }
+
+    .value-heading {
+        font-size: 32px;
+    }
+
+    .value-tagline {
+        font-size: 14px;
+    }
+
+    .value-desc h3 {
+        font-size: 18px;
+    }
+
+    .value-desc p {
+        font-size: 13px;
+    }
+
+    .value-cta {
+        padding: 20px;
+    }
+
+    .value-text h2 {
+        font-size: 32px;
+    }
+
+    .value-text p {
+        font-size: 13px;
+    }
+
+    .value-text a {
+        font-size: 14px;
+        padding: 0.6em 0.8em;
+    }
+}
+
+/* UVP End */
