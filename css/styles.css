@@ -369,6 +369,7 @@ nav {
 /* UVP Start */
 .value { 
     padding: 4% 5%;
+    margin-bottom: 5em;
 }
 .value-container { 
     display: flex;
@@ -584,5 +585,215 @@ background: linear-gradient(218deg, rgba(255,195,152,1) 0%, rgba(245,110,15,1) 4
         padding: 0.6em 0.8em;
     }
 }
-
 /* UVP End */
+
+/* Mentor Start */
+.mentors { 
+    padding: 5%;
+    background-color: var(--white);
+}
+.mentors-containers { 
+    display: flex;
+    flex-direction: column;
+}
+.mentors-header { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.mentors-header h2 { 
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 50px;
+    margin: 0;
+}
+.mentors-header span { 
+    font-size: 80px;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+    display: block;
+    background: #F56E0F;
+    background: linear-gradient(to right, #F56E0F 11%, #151419 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.mentors-header p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 590px;
+    line-height: 2;
+    color: var(--secondary-color);
+    opacity: 0.6;
+}
+
+.mentors-cards-wrapper { 
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+.mentors-card { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.mentor-img { 
+    border: 0.1px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.mentors-card img { 
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+.mentors-desc { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.mentors-card h3 { 
+    margin: 0;
+    font-size: 24px;
+    padding: 0;
+}
+.mentors-desc .social-links { 
+    display: flex;
+    gap: 5px;
+}
+.social-links li i { 
+    font-size: 25px;
+    color: var(--secondary-color);
+    transition: 0.1s ease-in;
+}
+.social-links li i:hover { 
+    color: var(--primary-color);
+}
+
+.mentors-cta { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.mentors-cta a{ 
+    box-shadow: 0 0 15px rgba(245, 110, 15, 0.7); /* Efek glow */
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 1em;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+.mentors-cta a:hover { 
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Efek glow */
+}
+
+/* Media Query untuk Tablet */
+@media (max-width: 1024px) {
+    .mentors-header h2 {
+        font-size: 40px;
+    }
+
+    .mentors-header span {
+        font-size: 60px;
+    }
+
+    .mentors-cards-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mentors-card {
+        width: 45%;
+    }
+
+    .mentors-card img {
+        width: 180px;
+        height: 220px;
+    }
+}
+
+/* Media Query untuk Mobile */
+@media (max-width: 768px) {
+    .mentors {
+        padding: 10%;
+    }
+
+    .mentors-header h2 {
+        font-size: 32px;
+    }
+
+    .mentors-header span {
+        font-size: 50px;
+    }
+
+    .mentors-header p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .mentors-cards-wrapper {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .mentors-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mentors-desc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentors-desc .social-links {
+        margin-top: 10px;
+    }
+
+    .mentors-cta {
+        margin-top: 2em;
+    }
+
+    .mentors-cta a {
+        font-size: 14px;
+        padding: 0.8em;
+    }
+}
+
+/* Media Query untuk Layar Kecil (HP Kecil) */
+@media (max-width: 480px) {
+    .mentors-header h2 {
+        font-size: 24px;
+    }
+
+    .mentors-header span {
+        font-size: 40px;
+    }
+
+    .mentors-header p {
+        font-size: 12px;
+    }
+
+    .mentors-card img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .mentors-cta a {
+        font-size: 12px;
+        padding: 0.7em;
+    }
+}
+
+/* Mentor Ends */
