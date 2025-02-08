@@ -1,0 +1,134 @@
+:root { 
+    --primary-color: #F56E0F;
+    --secondary-color: #151419;
+    --gluon-grey: #1b1b1e;
+    --slate-grey: #262626;
+    --dusty-grey: #878787;
+    --white: #fbfbfb;
+}
+html { 
+    scroll-behavior: smooth;
+    
+}
+* { 
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+body { 
+    padding: 0;
+    margin: 0;
+    background-color: var(--secondary-color);  
+}
+a, ul, li { 
+    text-decoration: none;
+    list-style-type: none;
+}
+nav { 
+    padding: 2% 3%;
+}
+.navbar { 
+    border-radius: 5em;
+    background: rgba(27, 27, 30, 0.6); /* Warna semi-transparan */
+    backdrop-filter: blur(100px); /* Efek blur */
+    -webkit-backdrop-filter: blur(100px); /* Untuk Safari */
+    border: 0.1px solid rgba(255, 255, 255, 0.2); /* Biar lebih elegan */
+}
+.navbar-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 2%;
+    font-size: 19px;
+    position: relative;
+}
+.navbar-links { 
+    display: flex;
+    align-items: center;
+}
+.navbar-links ul { 
+    display: flex;
+    gap: 1em;
+}
+.navbar-links ul li a { 
+    color: var(--white);
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+.navbar-links ul li a:hover { 
+    color: var(--primary-color);
+}
+.logo { 
+    font-size: 40px;
+    color: var(--white);
+    font-weight: 700;
+}
+.orange { 
+    color: var(--primary-color);
+}
+.navbar-cta a { 
+    display: flex;
+    align-items: center;
+    padding: 0.7em 1.3em;
+    background-color: var(--primary-color);
+    border-radius: 3em;
+    color: var(--white);
+    transition: all 0.2s ease-in-out;
+}
+.navbar-cta a:hover { 
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+/* HAMBURGER MENU */
+.hamburger { 
+    color: var(--white);
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) { 
+    nav { 
+        padding: 0;
+    }
+    .navbar { 
+        border-radius: 0;
+    }
+    .navbar-container { 
+        padding: 1em;
+    }
+    .navbar-links .logo { 
+        font-size: 25px;
+    }
+    .navbar-links ul li a { 
+        font-size: 15px;
+    }
+    .navbar-cta a { 
+        font-size: 15px;
+    }
+    .hamburger { 
+        display: block;
+    }
+    .navbar-links ul { 
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: var(--gluon-grey);
+        padding: 1em;
+        border-radius: 10px;
+        width: 200px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .navbar-links ul.active { 
+        display: flex;
+    }
+    .navbar-links ul li { 
+        margin: 10px 0;
+    }
+    .navbar-cta { 
+        display: none;
+    }
+}
