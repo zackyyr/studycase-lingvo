@@ -281,5 +281,88 @@ nav {
         width: 320px;
     }
 }
-
 /* Hero End */
+
+/* Experience Start */
+.experience { 
+    padding: 0% 5%;
+    background-color: var(--white);
+    width: 100%;
+
+}
+.experience-container{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 1em; */
+}
+.experience-container .exp { 
+    text-align: center;
+}
+.experience-container .exp h3 { 
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: var(--primary-color);
+}
+.experience-container .exp h4 { 
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .experience-container {
+        gap: 2em;
+    }
+
+    .experience-container .exp h3 {
+        font-size: 35px;
+    }
+
+    .experience-container .exp h4 {
+        font-size: 18px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .experience-container {
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+    }
+
+    .experience-container .exp {
+        width: 45%;
+    }
+
+    .experience-container .exp h3 {
+        font-size: 30px;
+    }
+
+    .experience-container .exp h4 {
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .experience-container {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .experience-container .exp {
+        width: 100%;
+    }
+
+    .experience-container .exp h3 {
+        font-size: 28px;
+    }
+
+    .experience-container .exp h4 {
+        font-size: 15px;
+    }
+}
+
+/* Experience End */
