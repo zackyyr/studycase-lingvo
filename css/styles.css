@@ -23,21 +23,26 @@ a, ul, li {
     text-decoration: none;
     list-style-type: none;
 }
+main { 
+    background: rgb(245,110,15);
+    background: linear-gradient(311deg, rgba(245,110,15,1) 0%, rgba(21,20,25,1) 63%);
+
+}
+/* Navbar Start */
 nav { 
-    padding: 2% 3%;
+    padding: 1% 5%;
 }
 .navbar { 
     border-radius: 5em;
     background: rgba(27, 27, 30, 0.6); /* Warna semi-transparan */
-    backdrop-filter: blur(100px); /* Efek blur */
-    -webkit-backdrop-filter: blur(100px); /* Untuk Safari */
-    border: 0.1px solid rgba(255, 255, 255, 0.2); /* Biar lebih elegan */
+    backdrop-filter: blur(200px); /* Efek blur */
+    border: 0.1px solid rgba(117, 117, 117, 0.2); /* Biar lebih elegan */
 }
 .navbar-container { 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5% 2%;
+    padding: 0% 2%;
     font-size: 19px;
     position: relative;
 }
@@ -53,19 +58,20 @@ nav {
     color: var(--white);
     font-weight: 400;
     transition: 0.2s ease;
+    font-size: 15px;
 }
 .navbar-links ul li a:hover { 
     color: var(--primary-color);
 }
 .logo { 
-    font-size: 40px;
+    font-size: 30px;
     color: var(--white);
     font-weight: 700;
 }
 .orange { 
     color: var(--primary-color);
 }
-.navbar-cta a { 
+.primary-cta { 
     display: flex;
     align-items: center;
     padding: 0.7em 1.3em;
@@ -73,6 +79,7 @@ nav {
     border-radius: 3em;
     color: var(--white);
     transition: all 0.2s ease-in-out;
+    font-size: 15px;
 }
 .navbar-cta a:hover { 
     background-color: var(--white);
@@ -132,3 +139,147 @@ nav {
         display: none;
     }
 }
+/* Navbar End */
+
+/* Hero Start */
+.hero { 
+    padding: 2% 6%;
+
+}
+.hero-container { 
+    display: flex;
+    justify-content: space-between;
+}
+.hero-text { 
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero-image img { 
+    width: 600px;
+    height: 530px;
+}
+.hero-text .tagline { 
+    font-weight: 300;
+    font-size: 15px;
+    background-color: var(--primary-color);
+    width: max-content;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    background: rgb(245,110,15);
+    background: linear-gradient(225deg, rgba(245,110,15,1) 0%, rgba(113,47,0,1) 98%);
+}
+.hero-text span { 
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: 500;
+    display: inline-block;
+}
+.hero-text h1 { 
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+.hero-text .desc { 
+    line-height: 1.5;
+    width: 90%;
+    font-size: 16px;
+}
+.hero-cta .primary-cta{ 
+    font-size: 18px;
+    max-width: max-content;
+    margin-bottom:2em;
+    box-shadow: 0 0 15px rgba(245, 110, 15, 0.7); /* Efek glow */
+}
+.hero-cta .primary-cta:hover{ 
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+.reviews-star{ 
+    color: var(--primary-color);
+    font-size: 20px;
+    padding-top: 10px;
+}
+.reviews-text {
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text .desc {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 5% 4%;
+    }
+
+    .hero-text .tagline {
+        font-size: 14px;
+        padding: 0.4em 0.8em;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text .desc {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .hero-cta .primary-cta {
+        font-size: 16px;
+        padding: 0.6em 1.2em;
+    }
+
+    .hero-image img {
+        width: 400px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 8% 3%;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text .desc {
+        font-size: 13px;
+    }
+
+    .hero-cta .primary-cta {
+        font-size: 14px;
+        padding: 0.5em 1em;
+    }
+
+    .hero-image img {
+        width: 320px;
+    }
+}
+
+/* Hero End */
