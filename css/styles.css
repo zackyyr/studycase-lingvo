@@ -370,11 +370,14 @@ nav {
 .value { 
     padding: 4% 5%;
     margin-bottom: 5em;
+    background: rgb(21,20,25);
+background: linear-gradient(21deg, rgba(21,20,25,1) 66%, rgba(245,111,16,1) 94%);
 }
 .value-container { 
     display: flex;
     flex-direction: column;
     gap: 2em;
+    
 }
 .value-header { 
     color: #fff;
@@ -801,8 +804,7 @@ background: linear-gradient(218deg, rgba(255,195,152,1) 0%, rgba(245,110,15,1) 4
 /* Testimonial Start */
 .testimonial { 
     padding: 6% 5%;
-    background: rgb(21,20,25);
-    /* background: linear-gradient(0deg, rgba(21,20,25,1) 55%, rgba(251,251,251,1) 94%); */
+
 }
 .testimonial-container { 
     display: flex;
@@ -886,9 +888,28 @@ background: linear-gradient(218deg, rgba(255,195,152,1) 0%, rgba(245,110,15,1) 4
 /* Testimonial End */
 
 /* Pricing Start */
+.pricing-img-bg .img-1, .pricing-img-bg .img-2 { 
+    position: absolute;
+    opacity: 0.4;
+}
+.pricing-img-bg .img-1 { 
+    top: 35%;
+    left: -11%;
+    transform: translateY(-50%);
+    width: 500px;
+    
+}
+.pricing-img-bg .img-2 { 
+    top: 60%;
+    right: -14%;
+    transform: translateY(-50%);
+    width: 700px;
+}
 .pricing { 
-    margin-top: 7em;
+    margin-top: 3em;
     padding: 0.2% 5%;
+    position: relative;
+    overflow: hidden;
 }
 .pricing-container { 
     display: flex;
