@@ -1136,5 +1136,133 @@ background: linear-gradient(218deg, rgba(255,195,152,1) 0%, rgba(245,110,15,1) 4
         padding: 10px 0;
     }
 }
-
 /* Pricing End */
+
+/* Footer Start */
+.footer { 
+    padding: 4%;
+    background-color: #000;
+}
+.footer-container { 
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+}
+.footer-links { 
+    display: flex;
+    justify-content: space-between;
+    
+    /* gap: 7em; */
+}
+.footer-company {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.footer-company h1 { 
+    margin: 0;
+    font-size: 30px;
+}
+.footer-company p { 
+    line-height: 1.5;
+    font-weight: 300;
+}
+.footer-copyright { 
+    border-top: 0.1px solid #efefef65;
+    padding-top: 20px;
+}
+.footer-explore .explore-links { 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-social i{ 
+    font-size: 25px;
+}
+/* Tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-company, 
+    .footer-contact-info, 
+    .footer-explore, 
+    .footer-social {
+        width: 45%;
+    }
+
+    .footer-company {
+        width: 100%;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .footer-company, 
+    .footer-contact-info, 
+    .footer-explore, 
+    .footer-social {
+        width: 100%;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 6%;
+    }
+
+    .footer-company h1 {
+        font-size: 25px;
+    }
+
+    .footer-company p {
+        font-size: 14px;
+    }
+
+    .footer-contact-info h3,
+    .footer-explore h3,
+    .footer-social h3 {
+        font-size: 18px;
+    }
+
+    .footer-social i {
+        font-size: 22px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+    }
+}
+
+/* Footer End */
