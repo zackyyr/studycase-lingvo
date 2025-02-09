@@ -684,6 +684,7 @@ background: linear-gradient(218deg, rgba(255,195,152,1) 0%, rgba(245,110,15,1) 4
     justify-content: center;
     align-items: center;
     margin-top: 3em;
+    padding-bottom: 3em;
 }
 .mentors-cta a{ 
     box-shadow: 0 0 15px rgba(245, 110, 15, 0.7); /* Efek glow */
@@ -795,5 +796,345 @@ background: linear-gradient(218deg, rgba(255,195,152,1) 0%, rgba(245,110,15,1) 4
         padding: 0.7em;
     }
 }
-
 /* Mentor Ends */
+
+/* Testimonial Start */
+.testimonial { 
+    padding: 6% 5%;
+    background: rgb(21,20,25);
+    /* background: linear-gradient(0deg, rgba(21,20,25,1) 55%, rgba(251,251,251,1) 94%); */
+}
+.testimonial-container { 
+    display: flex;
+    flex-direction: column;
+}
+.testimonial-header { 
+    color: var(--white);
+    padding-bottom: 3em;
+}
+.testimonial-header h3 { 
+    font-size: 40px;
+    margin: 0;
+    font-weight: 400;
+}
+.testimonial-desc { 
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.testimonial-desc h3 { 
+    color: var(--primary-color);
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    background: #F56E0F;
+    background: linear-gradient(to right, #F56E0F 11%, #FFFFFF 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.testimonial-cta { 
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 0.8em 1em;
+    border-radius: 3px;
+    transition: 0.1s ease-in;
+    font-size: 20px;
+}
+.testimonial-cta:hover { 
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+.testimonial-cards { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+.testimonial-card  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--white);
+    background-color: var(--gluon-grey);
+    padding: 25px;
+    width: 410px;
+    border-radius: 15px;
+    border: 0.1px solid var(--gluon-grey);
+}
+.testimonial-card .reviews-star { 
+    margin-bottom: 15px;
+}
+.testimonial-quote { 
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.testimonial-profile { 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.testimonial-profile img {
+    width: 50px;
+    border-radius: 10em;
+ }
+ .testimonial-identity h3, .testimonial-identity p{ 
+    font-size: 13px;
+    margin: 0;
+ }
+/* Testimonial End */
+
+/* Pricing Start */
+.pricing { 
+    margin-top: 7em;
+    padding: 0.2% 5%;
+}
+.pricing-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-header { 
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 5em;
+    z-index: 1000;
+}
+.pricing-header h1 { 
+    font-size: 40px;
+    background: #F56E0F;
+    background: linear-gradient(to right, #F56E0F 11%, #FFFFFF 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pricing-header h3 { 
+    font-weight: 500;
+    font-size: 25px;
+}
+.pricing-cards { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+}
+.pricing-card { 
+    max-width: 560px;
+    color: var(--white);
+    background: rgb(5,5,5);
+    background: linear-gradient(36deg, rgba(5,5,5,1) 70%, rgba(110,110,110,1) 94%);
+    padding: 40px;
+    border-radius:20px;
+    border: 0.1px solid var(--slate-grey);
+    box-shadow: rgba(245, 110, 15, 0.56) 0px 22px 200px 20px;
+}
+
+.pricing-card .pricing-tag { 
+    background: rgb(255,193,149);
+    background: linear-gradient(36deg, rgb(255, 158, 88) 33%, rgba(245,111,16,1) 94%);
+    max-width: max-content;
+    padding: 6px 7px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.pricing-card .pricing-title { 
+    font-size: 30px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+.pricing-card .pricing-desc { 
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+.pricing-checklist { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0 30px 0;
+    border-bottom: 0.1px solid #bcbcbcac;
+}
+.pricing-checklist li { 
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.pricing-checklist li i { 
+    font-size: 18px;
+    color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(245, 110, 15, 0.7); /* Efek glow */
+    border-radius: 5em;
+}
+.pricing-cta .pricing-promos { 
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.promos-line, .promos-percent { 
+    margin: 12px 0;
+}
+.promos-line { 
+    text-decoration: line-through;
+    font-weight: 500;
+    background-color: red;
+    padding: 3px 5px;
+    border-radius: 2px;
+}
+.promos-percent { 
+    background: #F56E0F;
+    background: linear-gradient(to right, #F56E0F 11%, #FFFFFF 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+.pricing-prices { 
+    margin: 0;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.pricing-cta a { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 600;
+    background: rgb(255,193,149);
+    background: linear-gradient(36deg, rgba(255,193,149,1) 16%, rgba(245,111,16,1) 94%);
+    box-shadow: 0 0 15px rgba(245, 110, 15, 0.7); /* Efek glow */
+    transition: 0.2s ease-in-out;
+}
+.pricing-cta a:hover { 
+    color: var(--primary-color);
+    background: var(--white);
+}
+/* Media Query untuk Tablet (Ukuran Layar: max 1024px) */
+@media (max-width: 1024px) {
+    .pricing-header h1 {
+        font-size: 35px;
+    }
+
+    .pricing-header h3 {
+        font-size: 22px;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 480px;
+        padding: 30px;
+    }
+
+    .pricing-card .pricing-title {
+        font-size: 26px;
+    }
+
+    .pricing-checklist li {
+        font-size: 14px;
+    }
+
+    .pricing-prices {
+        font-size: 30px;
+    }
+}
+
+/* Media Query untuk Smartphone (Ukuran Layar: max 768px) */
+@media (max-width: 768px) {
+    .pricing {
+        padding: 2% 5%;
+    }
+
+    .pricing-header h1 {
+        font-size: 30px;
+    }
+
+    .pricing-header h3 {
+        font-size: 18px;
+    }
+
+    .pricing-card {
+        max-width: 380px;
+        padding: 25px;
+    }
+
+    .pricing-card .pricing-title {
+        font-size: 24px;
+    }
+
+    .pricing-card .pricing-desc {
+        font-size: 12px;
+    }
+
+    .pricing-checklist {
+        gap: 15px;
+        padding: 15px 0 25px 0;
+    }
+
+    .pricing-checklist li {
+        font-size: 13px;
+    }
+
+    .pricing-prices {
+        font-size: 28px;
+    }
+
+    .pricing-cta a {
+        padding: 12px 0;
+        font-size: 14px;
+    }
+}
+
+/* Media Query untuk Mobile Kecil (Ukuran Layar: max 480px) */
+@media (max-width: 480px) {
+    .pricing {
+        margin-top: 5em;
+        padding: 3% 5%;
+    }
+
+    .pricing-header h1 {
+        font-size: 25px;
+    }
+
+    .pricing-header h3 {
+        font-size: 16px;
+    }
+
+    .pricing-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .pricing-card .pricing-title {
+        font-size: 22px;
+    }
+
+    .pricing-card .pricing-desc {
+        font-size: 11px;
+    }
+
+    .pricing-checklist li {
+        font-size: 12px;
+    }
+
+    .pricing-prices {
+        font-size: 26px;
+    }
+
+    .pricing-cta a {
+        font-size: 13px;
+        padding: 10px 0;
+    }
+}
+
+/* Pricing End */
